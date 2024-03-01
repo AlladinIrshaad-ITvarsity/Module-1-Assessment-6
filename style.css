@@ -12,6 +12,7 @@ body{
     display: flex;
     align-items: center;
     padding: 20px;
+    overflow: auto;
 }
 
 nav {
@@ -216,7 +217,7 @@ small{
 
 .footer-col-2 img{
     width: 250px;
-    height: auto;
+    height: 60px;
 }
 
 .footer-col-3, .footer-col-4{
@@ -247,48 +248,77 @@ ul{
     text-align: center;
 }
 
-.menu-icon{
-    width: 28px;
-    margin-left: 20px;
-    display: none;
-}
-
 @media only screen and (max-width: 600px) {
-    nav ul{
-        position: absolute;
-        top: 70px;
-        left: 0;
-        background: #333;
-        width: 100%;
-        overflow: hidden;
-        transition: max-height 0.3s;
-    }
-    nav ul li{
-        display: block;
-        margin-right: 50px;
-        margin-top:10px;
-        margin-bottom: 10px;
-    }
-    nav ul li a{
-        color: #fff;
-    }
-    .menu-icon{
-        display: block;
-        cursor: pointer;
-    }
+        .logo-img{
+            display: none;
+        }
+        .MenuItems{
+            align-items: stretch;
+        }
 }
 
-@media only screen and (max-width: 600px){
-    .row{
-        text-align: center;
-    }
-    .col-2, .col-4, .col-6{
-        flex-basis: 100%;
-    }
+.about-container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.about-row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.about-col-2{
+    flex-basis:50%;
+    min-width: 250px;
+}
+
+.about-col-2 img{
+    max-width: 120%;
+    padding: 100px 0px;
+    padding-left: 20%;
+    padding-top: 25%;
 }
 
 
+.contact{
+    padding-left: 40px;
+}
 
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  .form{
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    padding: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 
 
 
