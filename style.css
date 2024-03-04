@@ -439,3 +439,55 @@ input[type=text], select, textarea {
     color: #000;
 }
 
+/* Camera details */
+.single-product .col-2 img{
+    padding: 0;
+}
+
+.single-product .col-2{
+    padding: 30px;
+}
+
+.single-product h4{
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.small-img-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col{
+    flex-basis: 48%;
+    cursor: pointer;
+}
+
+.stock{
+    color: red;
+}
+
+table{
+    table-layout: fixed;
+    width: 90%;
+}
+
+table {
+    margin-bottom: 50px;
+  }
+  
+th {
+    height: 40px;
+  }
+
+td{
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+tr:hover {background-color: #4eb3d8;}
