@@ -316,12 +316,8 @@ input[type=text], select, textarea {
     border-radius: 20px;
     background-color: #f2f2f2;
     padding: 15px;
-    padding-left: 40px;
-    padding-right: 40px;
+    margin: 50px;
   }
-
-
-
 
 .main-wrapper{
     min-height: 100vh;
